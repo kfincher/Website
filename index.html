@@ -9,23 +9,61 @@
 			}
 			h4{
 				text-align: center;
-				margin-top:10px;
+				margin-top:8px;
 				padding:0;
+				margin-bottom: 5px;
 			}
 			body {
-				background-color: #3B2440;
+				background-color: #000000;
 				color:#EAFF00;
+			}
+			p{
+				padding-bottom: 3px;
 			}
 			ul{
 				list-style: disc;
-				padding-left: 0;
+				padding-left: 10px;
+				padding-bottom: 10px;
 			}
 			li{
 				padding-left: 20px;
+				padding-top: 5px
+				
+			}
+			a:link {
+			  color: #EAFF00;
+			}
+			a:visited {
+			  color: #EAFF00;
+			}
+			a:hover {
+			  color: #42C160;
+			}
+			a:active {
+			  color: #42C160;
 			}
 			.contents{
+				background-color: #3B2440;
 				margin: auto;
 				width: 40%;
+			}
+			.contents:before {
+				content:"";
+				background-color:#3B2440;
+				position: absolute;
+				height: 100%;
+				width: 50%;
+				left: 25%;
+				z-index: -1;
+			}
+			.headingstuff:before {
+				content:"";
+				background-color:#3B2440;
+				position: absolute;
+				height: 10%;
+				width: 50%;
+				left: 25%;
+				z-index: -1;
 			}
 			.video{
 				margin-left:50px;
@@ -35,12 +73,15 @@
 </head>
 <!-- purples yellows reds and greens-->
 <body>
-	<h1>Strawberry Popcorn</h1>
-	<h4>Bullet-hell Platformer Boss Fight</h4>
+	<div class="headingstuff">
+		<h1>Strawberry Popcorn</h1>
+		<h4>Bullet-hell Platformer Boss Fight</h4>
+	</div>
 	<div class="contents">
-		<p>Game link: 
-		</p>
-		<p>Gameplay trailer: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TBD </p>
+		<p>Game link: <br>&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="https://kfincher.itch.io/strawberrypopcorn" >Game</a>&nbsp;&nbsp;&nbsp;<a href="https://github.com/jwu135/Strawberry-Popcorn">Github</a></p>
+		<p>Gameplay trailer: <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		TBD </p>
 		<p>Example gameplay: 
 		<br>
 		<div class="video">
